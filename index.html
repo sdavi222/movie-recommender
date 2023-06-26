@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .center-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .placeholder-image {
+      width: 300px;
+      height: 300px;
+      background-color: #e9ecef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .placeholder-image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Movie Recommender</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle show" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="genreDropdownToggle">Genres</a>
+            <div class="dropdown-menu" id="genreDropdown">
+              <a class="dropdown-item" href="#" onclick="setGenre('28')">Action</a>
+              <a class="dropdown-item" href="#" onclick="setGenre('18')">Drama</a>
+              <a class="dropdown-item" href="#" onclick="setGenre('35')">Comedy</a>
+              <a class="dropdown-item" href="#" onclick="setGenre('53')">Thriller</a>
+              <a class="dropdown-item" href="#" onclick="setGenre('10749')">Romance</a>
+              <a class="dropdown-item" href="#" onclick="setGenre('27')">Horror</a>
+            </div>
+          </li>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="center-button">
+          <button class="btn btn-primary" onclick="generateRandomMovie()">Suggest a Movie</button>
+        </div>
+        <div id="movieInfo" class="mt-4">
+          <div id="movieImage"></div>
+          <div id="movieName"></div>
+        </div>
+      </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
