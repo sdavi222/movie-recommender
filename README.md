@@ -25,5 +25,6 @@ Bootstrap CSS framework was used for styling.
 ## Contact Information
 For any questions or feedback, feel free to contact me at sethdavi224@gmail.com
 
-link to live app: https://sdavi222.github.io/movie-recommender
 screenshot of live app: ![mov-rec-pic](https://github.com/sdavi222/movie-recommender/assets/130076128/bc4e71f3-db18-4432-9da3-4ca5f306db21)
+
+link to live app: https://sdavi222.github.io/movie-recommender
